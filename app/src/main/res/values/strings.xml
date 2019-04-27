@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dumbest Game on Earth</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--strings for start fragment-->
+    <string name="start_button">Start Game</string>
+    <string name="history_button">History</string>
+    <string name="reset_button">New game</string>
+    <string name="moves">Moves</string>
+</resources>

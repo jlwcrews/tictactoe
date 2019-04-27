@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/startFragment">
+
+    <fragment android:id="@+id/startFragment" android:name="no.jlwcrews.tictactoe.StartFragment"
+              android:label="fragment_start" tools:layout="@layout/fragment_start">
+        <action android:id="@+id/start_to_game" app:destination="@id/gameFragment"/>
+        <action android:id="@+id/start_to_history" app:destination="@id/historyFragment"/>
+    </fragment>
+    <fragment android:id="@+id/gameFragment" android:name="no.jlwcrews.tictactoe.GameFragment"
+              android:label="fragment_game" tools:layout="@layout/fragment_game">
+        <action android:id="@+id/game_to_history" app:destination="@id/historyFragment"/>
+    </fragment>
+    <fragment android:id="@+id/historyFragment" android:name="no.jlwcrews.tictactoe.HistoryFragment"
+              android:label="fragment_history" tools:layout="@layout/fragment_history">
+        <action android:id="@+id/history_to_start" app:destination="@id/startFragment"/>
+    </fragment>
+</navigation>
